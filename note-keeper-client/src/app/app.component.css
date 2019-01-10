@@ -1,0 +1,235 @@
+.main
+{
+    display: grid;
+    grid-template-rows:repeat(150,10px);
+    grid-template-columns:repeat(150,10px);
+   
+}
+
+.title
+{
+  grid-row-start:5;
+  grid-row-end:20;
+  grid-column-start:35;
+  grid-column-end:150;
+  background: rgb(51, 36, 50);
+}
+
+.titleText
+{
+  grid-row-start:12;
+  grid-row-end:20;
+  grid-column-start:75;
+  grid-column-end:150;
+  color: antiquewhite;
+  font-size: xx-large;
+}
+
+.content
+{
+  grid-row-start:20;
+  grid-row-end:60;
+  grid-column-start:35;
+  grid-column-end:150;
+  background: rgb(100, 87, 94);
+
+}
+
+.labels
+{
+    color: rgb(230, 156, 59);
+    font-size: x-large;
+
+}
+
+.selectNoteArea
+{
+  grid-row-start:25;
+  grid-row-end:60;
+  grid-column-start:65;
+  grid-column-end:150;
+
+}
+
+.monthlypaymnetArea
+{
+  grid-row-start:25;
+  grid-row-end:60;
+  grid-column-start:85;
+  grid-column-end:150;
+}
+
+.balanceRemainningArea
+{
+  grid-row-start:30;
+  grid-row-end:60;
+  grid-column-start:85;
+  grid-column-end:150;
+}
+
+.selectNote
+{
+  grid-row-start:25;
+  grid-row-end:60;
+  grid-column-start:58;
+  grid-column-end:150;
+  
+}
+
+.dropdown
+{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(49, 49, 15)
+    
+
+}
+
+.newNoteButton
+{
+  
+
+    grid-row-start:25;
+    grid-row-end:40;
+    grid-column-start:56;
+    grid-column-end:150;
+}
+
+.loadNotesButton
+{
+    grid-row-start:25;
+    grid-row-end:40;
+    grid-column-start:40;
+    grid-column-end:150;
+}
+
+.NextPageButton
+{
+   
+
+    grid-row-start:55;
+    grid-row-end:75;
+    grid-column-start:110;
+    grid-column-end:150;
+}
+
+
+
+.newNoteBalance
+{
+    grid-row-start:40;
+    grid-row-end:60;
+    grid-column-start:52;
+    grid-column-end:150;
+}
+
+.newNoteInterest
+{
+    grid-row-start:43;
+    grid-row-end:60;
+    grid-column-start:52;
+    grid-column-end:150;
+}
+
+.newNoteMP
+{
+    grid-row-start:46;
+    grid-row-end:60;
+    grid-column-start:52;
+    grid-column-end:150;
+}
+
+.newNoteBalanceLabel
+{
+    grid-row-start:40;
+    grid-row-end:60;
+    grid-column-start:46;
+    grid-column-end:150;
+}
+
+.newNoteInterestLabel
+{
+    grid-row-start:43;
+    grid-row-end:60;
+    grid-column-start:46;
+    grid-column-end:150;
+}
+
+.newNoteMPLabel
+{
+    grid-row-start:46;
+    grid-row-end:60;
+    grid-column-start:39;
+    grid-column-end:150;
+}
+
+.SaveNoteButton
+{
+  grid-row-start:50;
+  grid-row-end:60;
+  grid-column-start:52;
+  grid-column-end:150;
+
+}
+
+.notesTable
+{
+  grid-row-start:25;
+  grid-row-end:50;
+  grid-column-start:71;
+  grid-column-end:auto; 
+}
+
+.noteTableRow:nth-child(even)
+{
+    background-color: #f5e2e2;
+    
+
+}
+
+
+.noteTableRow:nth-child(odd)
+{
+    background-color: #1b6177;
+
+}
+
+.noteTableHead
+{
+   
+   
+    background-color: #eeaa43
+}
+
+.buttons
+{
+  background: rgba(75, 54, 45, 0.836);
+  
+  border-color: rgb(177, 177, 206);
+  width: 120px;
+  height: 30px;
+ 
+  font-weight: bolder;
+  color: aliceblue;
+  
+}
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tr:nth-child(even) {
+    background-color: #f5e2e2;
+}
+
+.tr:nth-child(odd) {
+    background-color: #1c265e;
+}

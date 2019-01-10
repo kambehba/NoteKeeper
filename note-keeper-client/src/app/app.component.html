@@ -1,0 +1,61 @@
+<div class="main">
+
+  <div class="title">
+
+  </div>
+
+  <div class="content">
+    
+  </div>
+
+  <div class="titleText">
+    Welcome to Note Keeper
+
+  </div>
+
+ 
+
+  <div class="newNoteButton"> <button class="buttons" (click)="OnNewNoteClicked()">New Note</button></div>
+  <div class="loadNotesButton"> <button class="buttons" (click)="OnLoadNotesClicked()">Load Notes</button></div>
+
+  <div class="newNoteBalanceLabel" *ngIf="showNewNoteForm"> Balance:</div>
+  <div class="newNoteMPLabel" *ngIf="showNewNoteForm">Monthly Payments:</div>
+  <div class="newNoteInterestLabel" *ngIf="showNewNoteForm"> Interest:</div>
+
+
+  <div class="newNoteBalance" *ngIf="showNewNoteForm"> <input type="text" [(ngModel)]="newNoteBalance"></div>
+  <div class="newNoteInterest" *ngIf="showNewNoteForm"> <input type="text" [(ngModel)]="newNoteInterest"></div>
+  <div class="newNoteMP" *ngIf="showNewNoteForm"> <input type="text" [(ngModel)]="newNoteMp"></div>
+
+  <div class="SaveNoteButton" *ngIf="showNewNoteForm"> <button class="buttons" (click)="OnSaveNoteClicked()">Save</button></div>
+
+  <div class="NextPageButton" *ngIf="showNoteData" > <button class="buttons" (click)="OnNextPageClicked()">Next</button></div>
+
+  
+    
+
+  <div class="notesTable" *ngIf="showNoteData">
+      <table>
+          <tr>
+              <th>Balance</th>
+              <th>Monthly Payment</th>
+              <th>Interest</th>
+            </tr>
+
+              <tr class="noteTableRow" *ngFor="let n of notes">
+                  <td>{{n.Balance}} </td>
+                  <td>{{n.MP}}</td>
+                  <td>{{n.Interest}}</td>
+                  <td><button class="buttons" (click)="OnEditClicked(n)">Edit</button></td>
+                  <td><button class="buttons" (click)="OnDeleteClicked(n)">Remove</button></td>
+                 
+              </tr>
+         
+        </table>
+        
+  </div>
+
+  
+
+  
+</div>
