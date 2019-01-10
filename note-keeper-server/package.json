@@ -1,0 +1,18 @@
+{
+  "name": "note-keeper-server",
+  "version": "1.0.0",
+  "description": "This is a HTTP server for front end web app called Note Keeper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kam Parsen - PARSEN HOMES LLC- copy right 2018",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "firebase": "^5.5.8",
+    "mongoose": "^5.3.12"
+  }
+}
