@@ -27,9 +27,12 @@ export class AppComponent {
 
     this.notesService.getNotesUpdateListener()
     .subscribe((notes:Note[])=>{
+      
+      
 
-      this.notes = notes;
-      console.log("Notes are Loaded***///" + this.notes[0].Id);
+      this.notes = notes.filter(x=>parseInt(x.Balance) < 4000);
+      //this.notes = notes;
+      //console.log("Notes are Loaded***///" + this.notes[0].Id);
     });
 
    //this.notesService.getNotes();

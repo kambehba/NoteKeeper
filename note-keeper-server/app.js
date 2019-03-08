@@ -14,13 +14,13 @@ app.use((req,res,next)=>{
 
 });
 
-// mongoose.connect("mongodb+srv://kam:k1234@kamparsen-h3oh4.gcp.mongodb.net/note-keeper?retryWrites=true", { useNewUrlParser: true }).then
-// (() => {console.log('connected to databse "note-keeper".');})
-// .catch(()=>{console.log('connection to database faild');});
-
-mongoose.connect("mongodb://localhost:27017/notes").then
+mongoose.connect("mongodb+srv://kam:k1234@kamparsen-h3oh4.gcp.mongodb.net/note-keeper?retryWrites=true", { useNewUrlParser: true }).then
 (() => {console.log('connected to databse "note-keeper".');})
 .catch(()=>{console.log('connection to database faild');});
+
+// mongoose.connect("mongodb://localhost:27017/notes").then
+// (() => {console.log('connected to databse "note-keeper".');})
+// .catch(()=>{console.log('connection to database faild');});
 
 var port = process.env.PORT || 3000;
 
@@ -28,5 +28,5 @@ app.use('/assets',express.static(__dirname + '/public'));
 
 noteController(app);
 
-app.listen(port);
+app.listen(port); //
 

@@ -12,9 +12,11 @@ module.exports = function(app){
     app.get("/api/notes",(req,res,next)=>{
         if(lastId)
             {
+                
                 Note.find({ _id: { $gt: lastId } } ).limit(5).then(doc=>{
                     if(doc.length)
                     {
+                        
                         lastId = doc[doc.length-1]._id;
                         res.status(200).json({message:"****",notes:doc});
                     }
